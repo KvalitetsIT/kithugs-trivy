@@ -92,13 +92,6 @@
 				<version>${spring-prometheus-app-info-version}</version>
 			</dependency>
 
-			<!-- Request ID logger -->
-			<dependency>
-				<groupId>dk.kvalitetsit</groupId>
-				<artifactId>spring-request-id-logger</artifactId>
-				<version>1.0.1</version>
-			</dependency>
-
 			<!-- Jackson Databind nullable -->
 			<dependency>
 				<groupId>org.openapitools</groupId>

@@ -47,6 +47,7 @@
         <dependency>
             <groupId>org.flywaydb</groupId>
             <artifactId>flyway-core</artifactId>
+                <version>6.0.8</version>
         </dependency>
 
         <!-- Easy string handling -->
@@ -59,12 +60,6 @@
         <dependency>
             <groupId>dk.kvalitetsit</groupId>
             <artifactId>spring-prometheus-app-info</artifactId>
-        </dependency>
-
-        <!-- Request id logger -->
-        <dependency>
-            <groupId>dk.kvalitetsit</groupId>
-            <artifactId>spring-request-id-logger</artifactId>
         </dependency>
 
         <!-- Servlet API -->
