@@ -24,6 +24,9 @@ jobs:
           username: ${{ secrets.DOCKER_HUB_USER }}
           password: ${{ secrets.DOCKER_HUB_PASSWORD }}
 
+      - name: Ppull
+        run: docker pull ${{ env.DOCKER_SERVICE }}:dev
+
       - name: Run Trivy vulnerability scanner json
         uses: aquasecurity/trivy-action@master
         with:

@@ -62,7 +62,7 @@ jobs:
       with:
         image-ref: '${{ env.DOCKER_SERVICE }}:latest'
         format: 'json'
-        output:
+        output: 'trivy-results.json'
         severity: 'CRITICAL,HIGH'
 
     - name: Trivy upload
