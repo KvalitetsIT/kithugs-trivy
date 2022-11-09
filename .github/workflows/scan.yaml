@@ -18,6 +18,12 @@ jobs:
         run: |
           echo "DOCKER_SERVICE=kvalitetsit/kithugs-trivy" >> $GITHUB_ENV
 
+      - name: Login to docker
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKER_HUB_USER }}
+          password: ${{ secrets.DOCKER_HUB_PASSWORD }}
+
       - name: Run Trivy vulnerability scanner json
         uses: aquasecurity/trivy-action@master
         with:
