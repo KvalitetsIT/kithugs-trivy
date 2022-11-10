@@ -42,7 +42,7 @@ jobs:
         run: |
           curl -v -X POST -H 'X-KEY: ${{ secrets.TRIVY_KEY }}' -H 'Content-Type: application/json' -d @trivy-results.json ${{ secrets.TRIVY_ENDPOINT }}
 
-      - uses: knqyf263/trivy-issue-action@v0.0.3
+      - uses: knqyf263/trivy-issue-action@v0.0.4
         with:
           # Label name
           # Default: vulnerability (this label must be created in advance)
